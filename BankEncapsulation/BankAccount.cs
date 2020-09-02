@@ -23,7 +23,8 @@ namespace BankEncapsulation
 
         public void Deposit()
         {
-            Console.WriteLine($"Enter amount of your deposit: $ ");
+             Console.WriteLine($"--------------------------------");
+;            Console.WriteLine($"Enter amount of your deposit: $ ");
             var depositAmount = double.Parse(Console.ReadLine());
             balance = depositAmount;
         }
@@ -33,6 +34,7 @@ namespace BankEncapsulation
 
         public double GetBalance()
         {
+            Console.WriteLine($"--------------------------------");
             Console.WriteLine($" ${balance} has been deposited.");
             return balance;
             

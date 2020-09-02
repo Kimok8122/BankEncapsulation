@@ -17,6 +17,15 @@ namespace BankEncapsulation
 
             yourAccount.GetBalance();
 
+
+            //In the Main method, create an instance of the PersonalInformation
+            //class and ask the user to input their phone number, then display
+            //the newly formatted phone number(NumberFormatted) to the user
+
+            var yourInfomation = new PersonalInformation();
+
+            yourInfomation.YourPhoneNumber();
+
         }
     }
 }
