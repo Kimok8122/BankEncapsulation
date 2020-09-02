@@ -30,9 +30,9 @@ namespace BankEncapsulation
                 phoneNumber = Regex.Replace($"{value}", @"(\d{3})(\d{3})(\d{4})", "$1-$2-$3");
             }
         }
-            
 
-            public void YourPhoneNumber()
+
+            public void KeyedInfomation()
 
             {
             Console.WriteLine($"------------------------");

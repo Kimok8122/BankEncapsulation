@@ -24,7 +24,7 @@ namespace BankEncapsulation
 
             var yourInfomation = new PersonalInformation();
 
-            yourInfomation.YourPhoneNumber();
+            yourInfomation.KeyedInfomation();
 
         }
     }
