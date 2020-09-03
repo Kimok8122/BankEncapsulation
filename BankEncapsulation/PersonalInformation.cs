@@ -19,7 +19,7 @@ namespace BankEncapsulation
 
          private string phoneNumber;
          
-         public string Numberformatted
+        public string Numberformatted
         {
             get
             {
@@ -32,9 +32,9 @@ namespace BankEncapsulation
         }
 
 
-            public void KeyedInfomation()
+        public void KeyedInfomation()
 
-            {
+        {
             Console.WriteLine($"------------------------");
             Console.WriteLine($"What is your Frist Name: ");
             var yourName = (Console.ReadLine());
@@ -47,11 +47,26 @@ namespace BankEncapsulation
             LastName = yourLastName;
             Console.WriteLine($"Thanks {FristName} {LastName}");
 
+
+
+            var yesOrNo = "";
+            do
+            {
+                Console.WriteLine($"------------------------");
+                Console.WriteLine($"What is your Zipcode: ");
+                int yourZipcode = int.Parse(Console.ReadLine());
+                Zip = yourZipcode;
+                Console.WriteLine($"Zipcode: {Zip}");
+                Console.WriteLine($"Is that correct - Yes, No:");
+                yesOrNo = (Console.ReadLine()).ToLower();
+
+            } while (yesOrNo == "no");
+          
+            
+
             Console.WriteLine($"------------------------");
-            Console.WriteLine($"What is your Zipcode: ");
-            int yourZipcode = int.Parse(Console.ReadLine());
-            Zip = yourZipcode;
-            Console.WriteLine($"Zipcode: {Zip}");
+            Console.WriteLine($"Great!");
+            
 
             Console.WriteLine($"------------------------");
             Console.WriteLine($"What is your phone number: ");
